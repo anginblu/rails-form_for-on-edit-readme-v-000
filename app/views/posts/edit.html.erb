@@ -4,11 +4,9 @@
   Post title: <%= person_form.text_field :title %>
   Post Description: <%= person_form.text_field :description %>
 
-  <%= f.submit "Create" %>
+  <%= f.submit "Update Post" %>
   <% end %>
 
-  <%= person_form.submit %>
-<% end %>
 
 <%= form_tag post_path(@post), method: "put" do %>
   <label>Post title:</label><br>
