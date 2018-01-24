@@ -4,8 +4,7 @@
   Post title: <%= person_form.text_field :title %>
   Post Description: <%= person_form.text_field :description %>
 
-  <%= fields_for :permission, @person.permission do |permission_fields| %>
-    Admin?  : <%= permission_fields.check_box :admin %>
+  <%= f.submit "Create" %>
   <% end %>
 
   <%= person_form.submit %>
