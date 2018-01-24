@@ -1,8 +1,10 @@
 <h3>Post Form</h3>
 
 <%= form_for(@post) url: {action: "update"} do |f| %>
-  Post title: <%= f.text_field :title %>
-  Post Description: <%= f.text_field :description %>
+  <label>Post title:</label><br>
+  <%= f.text_field :title %>
+  <label>Post description</label><br>
+  <%= f.text_field :description %>
 
   <%= f.submit "Update Post" %>
   <% end %>
