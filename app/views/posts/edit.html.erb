@@ -1,6 +1,6 @@
 <h3>Post Form</h3>
 
-<%= form_for @post url: {action: "create"} do |post_form| %>
+<%= form_for @post url: {action: "update"} do |post_form| %>
   Post title: <%= person_form.text_field :title %>
   Post Description: <%= person_form.text_field :description %>
 
