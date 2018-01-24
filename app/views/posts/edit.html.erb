@@ -2,9 +2,9 @@
 
 <%= form_for(@post) url: {action: "update"} do |f| %>
   <label>Post title:</label><br>
-  <%= f.text_field :title %>
+  <%= f.text_field :title %><br>
   <label>Post description</label><br>
-  <%= f.text_field :description %>
+  <%= f.text_field :description %><br>
 
   <%= f.submit "Update Post" %>
   <% end %>
